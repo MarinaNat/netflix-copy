@@ -1,0 +1,21 @@
+.sidebar {
+	ul {
+		li {
+			margin-bottom: 0.5rem;
+			a {
+				padding: 0.5rem;
+				display: block;
+
+				&.active {
+					border-color: #c62e21;
+					background-color: #2a2a2c;
+				}
+
+				&:hover {
+					border-color: #88190f;
+					background-color: #333335;
+				}
+			}
+		}
+	}
+}
