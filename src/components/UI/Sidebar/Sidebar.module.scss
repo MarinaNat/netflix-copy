@@ -1,3 +1,5 @@
+@import "../../../varibles";
+
 .sidebar {
 	ul {
 		li {
@@ -5,6 +7,7 @@
 			a {
 				padding: 0.5rem;
 				display: block;
+				color: $gray;
 
 				&.active {
 					border-color: #c62e21;
