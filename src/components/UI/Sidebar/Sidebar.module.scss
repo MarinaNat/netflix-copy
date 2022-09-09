@@ -10,8 +10,8 @@
 				color: $gray;
 
 				&.active {
-					border-color: #c62e21;
-					background-color: #2a2a2c;
+					border-color: $red;
+					background-color: $gray;
 				}
 
 				&:hover {
