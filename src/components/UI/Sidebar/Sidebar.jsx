@@ -4,9 +4,12 @@ const menu = [
 	'Popular', 'TV Shows', 'Films', 'My list'
 ]
 
-const Sidebar = () => {
+const Sidebar = ({ isSidbarShow, setIsSidbarShow }) => {
 	return (
 		<div className={styles.sidebar}>
+			<button onClick={() => setIsSidbarShow(true)}>
+				<i className={`bx bx-${isSidbarShow ? 'x' : 'border-left'}`}></i>
+			</button>
 			<ul>
 				{menu.map(title => (
 					<li>
@@ -15,7 +18,7 @@ const Sidebar = () => {
 				))}
 			</ul>
 
-		</div>
+		</div >
 	)
 }
 
