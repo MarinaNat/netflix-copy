@@ -8,12 +8,16 @@ import { useState } from 'react';
 const Main = () => {
 	const [isSidbarShow, setIsSidbarShow] = useState(false)
 	return (
-		<div>
+		<div className={styles.wrapper}>
 			<Sidebar
 				isSidbarShow={isSidbarShow}
 				setIsSidbarShow={setIsSidbarShow}
 			/>
-			<div style={{}}>
+			<div className={styles.main}
+				style={{
+					backgroundImage: `url(${DATA[0].mainImage})`,
+					width: isSidbarShow ? 70 : 85
+				}}>
 				<Information movie={DATA[0]} />
 				<BottomNavigation />
 
