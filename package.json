@@ -2,6 +2,7 @@
   "name": "netflix-copy",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://marinanat.github.io/netflix-copy/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^13.4.0",
