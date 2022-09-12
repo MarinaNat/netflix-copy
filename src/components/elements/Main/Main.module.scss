@@ -3,6 +3,7 @@
 .wrapper {
 	position: relative;
 	height: calc(100vh - 78px);
+	display: flex;
 
 	.main {
 		background-size: cover;
@@ -25,6 +26,7 @@
 		position: relative;
 		z-index: 1;
 		width: 50%;
+		padding: 4rem 0 4rem 1rem;
 
 		.additional {
 			display: flex;

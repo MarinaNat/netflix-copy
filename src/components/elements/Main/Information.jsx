@@ -1,8 +1,8 @@
 import styles from './Main.module.scss';
-import Button from '../../UI/Button'
+import Button from '../../UI/Button/Button'
 
 const Information = ({ movie, setModulSHow }) => {
-	const addToАavorites = (movieName) => {
+	const addToАavorites = movieName => {
 		let favorites = localStorage.getItem('favMovies')
 		if (favorites) {
 			favorites = JSON.parse(favorites)
@@ -11,10 +11,14 @@ const Information = ({ movie, setModulSHow }) => {
 		}
 
 	}
-
 	return (
 		<div className={styles.info}>
-			<img src={movie.logo} alt={movie.name} width='200' />
+			<img
+				src={movie.logo}
+				alt={movie.name}
+				width='200'
+				style={{ opacity: 0.7 }}
+			/>
 
 			<div className={styles.additional}>
 				<span>{movie.year}</span>
@@ -33,7 +37,7 @@ const Information = ({ movie, setModulSHow }) => {
 				</Button>
 				<Button cb={addToАavorites}>
 					<i className="bx bx-plus"></i>
-					<span>Play</span>
+					<span>My list</span>
 				</Button>
 			</div>
 		</div>

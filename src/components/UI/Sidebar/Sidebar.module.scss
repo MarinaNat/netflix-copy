@@ -1,8 +1,21 @@
 @import "../../../varibles";
 
 .sidebar {
+	> button {
+		background-color: transparent;
+		border: none;
+		color: $gray;
+		font-size: 30px;
+	}
 	ul {
 		list-style-type: none;
+		padding: 0;
+		display: none;
+		animation: opacity 0.4s;
+
+		&.show {
+			display: block;
+		}
 		li {
 			margin-bottom: 0.5rem;
 			a {
@@ -12,6 +25,7 @@
 				text-decoration: none;
 				border-right: 2px solid transparent;
 				font-size: 20px;
+				text-align: right;
 
 				&.active {
 					border-color: $red;
