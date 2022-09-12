@@ -19,7 +19,6 @@ const Information = ({ movie, setModulSHow }) => {
 				width='200'
 				style={{ opacity: 0.7 }}
 			/>
-
 			<div className={styles.additional}>
 				<span>{movie.year}</span>
 				<span>{movie.limitAge}</span>
