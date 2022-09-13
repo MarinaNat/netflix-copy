@@ -6,9 +6,9 @@ const menu = [
 
 const Sidebar = ({ isSidebarShow, setIsSidebarShow }) => {
 	return (
-		<div className={styles.sidebar} style={{ width: isSidebarShow ? '15%' : '10%' }}>
-			<button onClick={() => setIsSidebarShow(!isSidebarShow)}>
-				<i className={`bx bx-${isSidebarShow ? 'x' : 'border-left'}`}></i>
+		<div className={styles.sidebar} style={{ width: isSidbarShow ? '15%' : '10%' }}>
+			<button onClick={() => setIsSidbarShow(!isSidbarShow)}>
+				<i className={`bx bx-${isSidbarShow ? 'x' : 'border-left'}`}></i>
 			</button>
 			<ul className={isSidebarShow ? styles.show : ''}>
 				{menu.map(title => (

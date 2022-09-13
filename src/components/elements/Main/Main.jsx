@@ -19,7 +19,7 @@ const Main = () => {
 			<div className={styles.main}
 				style={{
 					backgroundImage: `url(${DATA[0].mainImage})`,
-					width: isSidebarShow ? '70%' : '85%'
+					width: isSidbarShow ? '85%' : '90%'
 				}}>
 				{activeTab === 1 ?
 					<Information movie={DATA[0]} />
