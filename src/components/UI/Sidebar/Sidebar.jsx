@@ -6,7 +6,7 @@ const menu = [
 
 const Sidebar = ({ isSidbarShow, setIsSidbarShow }) => {
 	return (
-		<div className={styles.sidebar} style={{ width: isSidbarShow ? '30%' : '15%' }}>
+		<div className={styles.sidebar} style={{ width: isSidbarShow ? '15%' : '10%' }}>
 			<button onClick={() => setIsSidbarShow(!isSidbarShow)}>
 				<i className={`bx bx-${isSidbarShow ? 'x' : 'border-left'}`}></i>
 			</button>
