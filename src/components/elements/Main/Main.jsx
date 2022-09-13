@@ -4,24 +4,29 @@ import styles from './Main.module.scss';
 import { DATA } from '../../../data';
 import BottomNavigation from '../../UI/BottomNavigation/BottomNavigation';
 import { useState } from 'react';
+import Episodes from '../Episodes/Episodes';
 
 const Main = () => {
-	const [isSidbarShow, setIsSidbarShow] = useState(false)
+	const [isSidebarShow, setIsSidebarShow] = useState(false)
+	const [activeTab, setActiveTab] = useState(false)
+
 	return (
 		<div className={styles.wrapper}>
 			<Sidebar
-				isSidbarShow={isSidbarShow}
-				setIsSidbarShow={setIsSidbarShow}
+				isSidebarShow={isSidebarShow}
+				setIsSidebarShow={setIsSidebarShow}
 			/>
 			<div className={styles.main}
 				style={{
 					backgroundImage: `url(${DATA[0].mainImage})`,
 					width: isSidbarShow ? '85%' : '90%'
 				}}>
-				<Information movie={DATA[0]} />
-				<BottomNavigation />
-
+				{activeTab === 1 ?
+					<Information movie={DATA[0]} />
+					: activeTab === 2 && <Episodes />
+				}
 			</div>
+			<BottomNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
 		</div>
 	)
 }

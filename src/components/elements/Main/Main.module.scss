@@ -3,6 +3,7 @@
 .wrapper {
 	position: relative;
 	display: flex;
+	min-height: 514px;
 
 	.main {
 		background-size: cover;
@@ -25,7 +26,7 @@
 		position: relative;
 		z-index: 1;
 		width: 50%;
-		padding: 4rem 0 4rem 1rem;
+		padding: 5rem 0 5rem 1rem;
 
 		.additional {
 			display: flex;
@@ -35,15 +36,16 @@
 			margin: 1rem 0;
 
 			> span {
-				margin-right: 5rem;
+				margin-right: 1rem;
 				font-size: 18px;
 			}
 		}
 
 		.description {
-			font-size: 20px;
+			font-size: 18px;
 			color: $gray;
 			margin-bottom: 3rem;
+			line-height: 1.65;
 		}
 	}
 }

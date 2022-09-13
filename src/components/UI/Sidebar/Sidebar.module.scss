@@ -6,6 +6,7 @@
 		border: none;
 		color: $gray;
 		font-size: 30px;
+		margin-left: 6rem;
 	}
 	ul {
 		list-style-type: none;
@@ -23,7 +24,7 @@
 				display: block;
 				color: $gray;
 				text-decoration: none;
-				border-right: 2px solid transparent;
+				border-left: 2px solid transparent;
 				font-size: 20px;
 				text-align: right;
 
